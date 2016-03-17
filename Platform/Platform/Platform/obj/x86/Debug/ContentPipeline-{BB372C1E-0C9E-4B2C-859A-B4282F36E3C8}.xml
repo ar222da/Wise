@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>font.bmp</Source>
+      <Name>font</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\font.xnb</Output>
+      <Time>2014-05-13T01:41:23.7154713+02:00</Time>
+    </Item>
+    <Item>
+      <Source>air-20529_1280.jpg</Source>
+      <Name>air-20529_1280</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\air-20529_1280.xnb</Output>
+      <Time>2014-08-07T02:31:01.829169+02:00</Time>
+    </Item>
+    <Item>
+      <Source>font2.bmp</Source>
+      <Name>font2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\font2.xnb</Output>
+      <Time>2014-06-17T10:46:16.0970597+02:00</Time>
+    </Item>
+    <Item>
+      <Source>gameover.png</Source>
+      <Name>gameover</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\gameover.xnb</Output>
+      <Time>2014-08-10T19:24:34.652583+02:00</Time>
+    </Item>
+    <Item>
+      <Source>kill.wav</Source>
+      <Name>kill</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\kill.xnb</Output>
+      <Time>2014-07-31T19:26:11.5761272+02:00</Time>
+    </Item>
+    <Item>
+      <Source>jump.wav</Source>
+      <Name>jump</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\jump.xnb</Output>
+      <Time>2014-07-31T19:26:19.1197488+02:00</Time>
+    </Item>
+    <Item>
+      <Source>walking.wav</Source>
+      <Name>walking</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\walking.xnb</Output>
+      <Time>2014-07-31T20:06:48.4358428+02:00</Time>
+    </Item>
+    <Item>
+      <Source>killEnemy.wav</Source>
+      <Name>killEnemy</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\killEnemy.xnb</Output>
+      <Time>2014-07-31T20:09:39.9763308+02:00</Time>
+    </Item>
+    <Item>
+      <Source>en.png</Source>
+      <Name>en</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\en.xnb</Output>
+      <Time>2014-08-03T03:25:09.0337663+02:00</Time>
+    </Item>
+    <Item>
+      <Source>bricksheet.png</Source>
+      <Name>bricksheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\bricksheet.xnb</Output>
+      <Time>2014-08-06T23:24:59.9882151+02:00</Time>
+    </Item>
+    <Item>
+      <Source>sky1.png</Source>
+      <Name>sky1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\sky1.xnb</Output>
+      <Time>2014-08-03T04:54:48.4656672+02:00</Time>
+    </Item>
+    <Item>
+      <Source>sky2.png</Source>
+      <Name>sky2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\sky2.xnb</Output>
+      <Time>2014-08-03T04:56:44.5918921+02:00</Time>
+    </Item>
+    <Item>
+      <Source>sheet5.png</Source>
+      <Name>sheet5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\sheet5.xnb</Output>
+      <Time>2014-08-03T16:47:51.3902476+02:00</Time>
+    </Item>
+    <Item>
+      <Source>funny2.png</Source>
+      <Name>funny2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\funny2.xnb</Output>
+      <Time>2014-08-03T23:48:54.2390116+02:00</Time>
+    </Item>
+    <Item>
+      <Source>funny2 (1).png</Source>
+      <Name>funny2 (1)</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\funny2 (1).xnb</Output>
+      <Time>2014-08-03T23:50:45.6640879+02:00</Time>
+    </Item>
+    <Item>
+      <Source>brickbibi.png</Source>
+      <Name>brickbibi</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\brickbibi.xnb</Output>
+      <Time>2014-08-07T01:36:02.4100239+02:00</Time>
+    </Item>
+    <Item>
+      <Source>clouds-351487_1920.jpg</Source>
+      <Name>clouds-351487_1920</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\clouds-351487_1920.xnb</Output>
+      <Time>2014-08-07T02:58:19.5132504+02:00</Time>
+    </Item>
+    <Item>
+      <Source>cloudy-240327_1280.jpg</Source>
+      <Name>cloudy-240327_1280</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\cloudy-240327_1280.xnb</Output>
+      <Time>2014-08-08T00:02:43.9831664+02:00</Time>
+    </Item>
+    <Item>
+      <Source>button-quit-opacity.png</Source>
+      <Name>button-quit-opacity</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\button-quit-opacity.xnb</Output>
+      <Time>2014-08-10T01:06:22.58538+02:00</Time>
+    </Item>
+    <Item>
+      <Source>button-quit.png</Source>
+      <Name>button-quit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\button-quit.xnb</Output>
+      <Time>2014-08-10T01:06:22.5783753+02:00</Time>
+    </Item>
+    <Item>
+      <Source>button-start-opacity.png</Source>
+      <Name>button-start-opacity</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\button-start-opacity.xnb</Output>
+      <Time>2014-08-10T01:06:22.597388+02:00</Time>
+    </Item>
+    <Item>
+      <Source>button-start.png</Source>
+      <Name>button-start</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\button-start.xnb</Output>
+      <Time>2014-08-10T01:06:22.5903829+02:00</Time>
+    </Item>
+    <Item>
+      <Source>menu.png</Source>
+      <Name>menu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\menu.xnb</Output>
+      <Time>2014-08-10T19:24:41.8979083+02:00</Time>
+    </Item>
+    <Item>
+      <Source>pause.png</Source>
+      <Name>pause</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\pause.xnb</Output>
+      <Time>2014-08-10T19:24:48.4365003+02:00</Time>
+    </Item>
+    <Item>
+      <Source>nalaka-pres.png</Source>
+      <Name>nalaka-pres</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\nalaka-pres.xnb</Output>
+      <Time>2014-08-10T14:27:24.0481557+02:00</Time>
+    </Item>
+    <Item>
+      <Source>no.png</Source>
+      <Name>no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\no.xnb</Output>
+      <Time>2014-08-10T14:27:32.8697618+02:00</Time>
+    </Item>
+    <Item>
+      <Source>no-op.png</Source>
+      <Name>no-op</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\no-op.xnb</Output>
+      <Time>2014-08-10T14:27:38.6182862+02:00</Time>
+    </Item>
+    <Item>
+      <Source>quit.png</Source>
+      <Name>quit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\quit.xnb</Output>
+      <Time>2014-08-10T14:27:49.7414732+02:00</Time>
+    </Item>
+    <Item>
+      <Source>yes.png</Source>
+      <Name>yes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\yes.xnb</Output>
+      <Time>2014-08-10T14:27:56.8706748+02:00</Time>
+    </Item>
+    <Item>
+      <Source>yes-op.png</Source>
+      <Name>yes-op</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\yes-op.xnb</Output>
+      <Time>2014-08-10T14:28:03.2688068+02:00</Time>
+    </Item>
+    <Item>
+      <Source>menu (1).png</Source>
+      <Name>menu (1)</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\menu (1).xnb</Output>
+      <Time>2014-08-10T18:33:11.7552699+02:00</Time>
+    </Item>
+    <Item>
+      <Source>gameover (3).png</Source>
+      <Name>gameover (3)</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\gameover (3).xnb</Output>
+      <Time>2014-08-10T18:33:42.4469445+02:00</Time>
+    </Item>
+    <Item>
+      <Source>finished.png</Source>
+      <Name>finished</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\finished.xnb</Output>
+      <Time>2014-08-10T19:24:26.6128894+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{BB372C1E-0C9E-4B2C-859A-B4282F36E3C8}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\PlatformContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\AndersRobelius\documents\visual studio 2012\Projects\Platform\Platform\Platform\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-04-19T18:43:49.5265868+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

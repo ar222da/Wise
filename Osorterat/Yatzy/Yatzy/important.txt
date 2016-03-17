@@ -1,0 +1,405 @@
+﻿int numberOfDice = 5;
+            int numberOfPlayers = 0;
+
+            List<model_player> players = new List<model_player>();
+            Console.ForegroundColor = ConsoleColor.White;
+
+            // Välja spel
+            bool gameSelected = false;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Select game");
+                Console.WriteLine("1. Yathzee");
+                Console.WriteLine("2. Maxi-Yahtzee");
+                ConsoleKeyInfo input = Console.ReadKey(true);
+                if (input.Key == ConsoleKey.D1)
+                {
+                    gameSelected = true;
+                }
+                else if (input.Key == ConsoleKey.D2)
+                {
+                    gameSelected = true;
+                }
+                else
+                {
+                    gameSelected = false;
+                }
+            } while (gameSelected == false);
+
+
+            // Välja antal spelare
+            bool inputNumberOfPlayer = false;
+            do
+            {
+                Console.Clear();
+                Console.Write("How many players? (1-5)");
+                ConsoleKeyInfo input = Console.ReadKey(true);
+
+                if (input.Key == ConsoleKey.D1)
+                {
+                    numberOfPlayers = 1;
+                    inputNumberOfPlayer = true;
+                }
+                else if (input.Key == ConsoleKey.D2)
+                {
+                    numberOfPlayers = 2;
+                    inputNumberOfPlayer = true;
+                }
+                else if (input.Key == ConsoleKey.D3)
+                {
+                    numberOfPlayers = 3;
+                    inputNumberOfPlayer = true;
+                }
+                else if (input.Key == ConsoleKey.D4)
+                {
+                    numberOfPlayers = 4;
+                    inputNumberOfPlayer = true;
+                }
+                else if (input.Key == ConsoleKey.D5)
+                {
+                    numberOfPlayers = 5;
+                    inputNumberOfPlayer = true;
+                }
+                else
+                {
+                    inputNumberOfPlayer = false;
+                }
+
+            } while (inputNumberOfPlayer == false);
+
+
+
+            // Läsa in från användaren spelarnas namn och typ
+            for (int i = 0; i < numberOfPlayers; i++)
+            {
+                model_player player = new model_player();
+                bool correctNameInput = false;
+                do
+                {
+                    Console.Clear();
+                    Console.Write("Name of player " + (i + 1) + ": ");
+                    string name = Console.ReadLine();
+                    if (string.IsNullOrEmpty(name))
+                    {
+                        Console.WriteLine("Please type a name of player!");
+                        Console.ReadKey(true);
+                    }
+                    else
+                    {
+                        player.Name = name;
+                        correctNameInput = true;
+                    }
+                } while (correctNameInput == false);
+
+                bool correctPlayerTypeInput = false;
+                do
+                {
+                    Console.Clear();
+                    Console.Write("Is " + player.Name + " a person or computer? (p/c)");
+                    ConsoleKeyInfo input = Console.ReadKey(true);
+
+                    if (input.Key == ConsoleKey.P)
+                    {
+                        player.PlayerType = model_playerType.person;
+                        correctPlayerTypeInput = true;
+                    }
+                    else if (input.Key == ConsoleKey.C)
+                    {
+                        player.PlayerType = model_playerType.computer;
+                        correctPlayerTypeInput = true;
+                    }
+                    else
+                    {
+                        correctPlayerTypeInput = false;
+                    }
+
+                } while (correctPlayerTypeInput == false);
+
+                players.Add(player);
+            }
+
+            // Skapa tabell för varje spelare
+            foreach (model_player player in players)
+            {
+                model_column column = new model_column();
+                player.Column = column;
+            }
+
+
+
+            //Spelet
+
+bool won = false;
+do
+{
+
+
+    foreach (model_player player in players)
+    {
+
+        // Skapa en runda
+        model_turn turn = new model_turn(numberOfDice);
+
+        
+        // Tärningsset
+        List<model_die> dice = new List<model_die>();
+        
+        // Skapa tärningarna och lägg in i tärningsset
+        for (int i = 0; i < numberOfDice; i++)
+        {
+            model_die die = new model_die();
+            dice.Add(die);
+        }
+
+        // Skapa regler
+        Imodel_rules rules = new model_rules_yahtzee();
+        rules.LoadCategories();
+
+        // View- och menyrelaterat
+        int menuSelectDiceListIndex = 0;
+        int menuSelectCategoryListIndex = 0;
+        int menuSelected = 0;
+        bool scored = false;
+
+        // Loopa rundan tills den är slut
+        do
+        {
+            Console.Clear();
+            if (turn.NumberOfThrowsLeft == 3)
+            {
+                Console.WriteLine("Get ready " + player.Name + "!");
+                Console.WriteLine("This will be your first roll in this round!");
+                Console.WriteLine("Press any key to roll dice");
+                Console.ReadKey();
+                
+                
+                
+                turn.Throw(dice);
+            }
+
+
+            else if (turn.NumberOfThrowsLeft < 3)
+            {
+                List<model_die> menuSelectDiceList = new List<model_die>();
+                List<model_category> menuSelectCategoryList = new List<model_category>();
+                foreach (model_die die in dice)
+                {
+                    menuSelectDiceList.Add(die);
+                }
+
+                rules.CheckPossibleCategories(turn.DiceSet);
+                
+                foreach (model_category category in rules.Categories)
+                {
+                    if (category.Score != 0 && player.Column.Categories[category.Id - 1].Score == 0)
+                    {
+                        menuSelectCategoryList.Add(category);
+                    }
+                }
+
+                Console.WriteLine("Dice");
+                Console.WriteLine("Use arrow keys and press enter to select die or dice");
+                Console.WriteLine("to hold for next roll. Yellow means it will be hold.");
+                Console.WriteLine("Press tab to switch to category selection.");
+                Console.WriteLine("==========================================================");
+
+                for (int i = 0; i < menuSelectDiceList.Count; i++)
+                {
+                    if (menuSelectDiceList[i].Hold == true)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                    }
+                    if (i == menuSelectDiceListIndex && menuSelected == 0)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Red;
+                    }
+                    Console.WriteLine("Die " + (i + 1) + ": " + turn.DiceSet[i] + " " + dice[i].Hold);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.BackgroundColor = ConsoleColor.Black;
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("Categories");
+                Console.WriteLine("Use arrow keys and press enter to select possible");
+                Console.WriteLine("categories to score in your table.");
+                Console.WriteLine("Press tab to switch to dice selection.");
+                Console.WriteLine("=============================================================");
+
+                if (!menuSelectCategoryList.Any())
+                {
+                    Console.WriteLine("No categories match the given combination of dice!");
+                }
+                else
+                {
+                    for (int i = 0; i < menuSelectCategoryList.Count; i++)
+                    {
+                        if (i == menuSelectCategoryListIndex && menuSelected == 1)
+                        {
+                            Console.BackgroundColor = ConsoleColor.Red;
+                        }
+                        Console.WriteLine(menuSelectCategoryList[i].Title + ": " + menuSelectCategoryList[i].Score);
+                        Console.BackgroundColor = ConsoleColor.Black;
+                    }
+                }
+                Console.WriteLine();
+                Console.WriteLine("Press (s) to save game");
+
+                if (turn.NumberOfThrowsLeft > 0)
+                {
+                    Console.WriteLine("Press (r) to roll dice. Yellow marked dice will not be rolled again.");
+                    Console.WriteLine("Rolls left in this round: " + turn.NumberOfThrowsLeft);
+                }
+                
+                else if (turn.NumberOfThrowsLeft == 0)
+                {
+                    if (!menuSelectCategoryList.Any())
+                    {
+                        Console.WriteLine("You have no rolls left and no categories to score with the given combination of dice!");
+                        Console.WriteLine("You will score 0 in this round!");
+                        Console.ReadKey();
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("You have no rolls left. You have to select one of the given categories.");
+                    }
+
+                }    
+                
+                ConsoleKeyInfo input = Console.ReadKey(true);
+                int sizeOfMenu = menuSelectDiceList.Count + menuSelectCategoryList.Count;
+                // Trycker enter
+                if (input.Key == ConsoleKey.Enter)
+                {
+
+                    if (menuSelected == 0)
+                    {
+                        if (dice[menuSelectDiceListIndex].Hold == true)
+                        {
+                            dice[menuSelectDiceListIndex].Hold = false;
+                        }
+                        else
+                        {
+                            dice[menuSelectDiceListIndex].Hold = true;
+                        }
+                    }
+
+                    else if (menuSelected == 1)
+                    {
+                        int id = menuSelectCategoryList[menuSelectCategoryListIndex].Id;
+                        int score = menuSelectCategoryList[menuSelectCategoryListIndex].Score;
+                        player.Column.Categories[id - 1].Score = score;
+                        scored = true;
+                        turn.Finished = true;
+                    }
+                }
+
+                else if (input.Key == ConsoleKey.Tab)
+                {
+                    if (menuSelected == 0)
+                    {
+                        menuSelected = 1;
+                    }
+                    else
+                    {
+                        menuSelected = 0;
+                    }
+                }
+
+                // Trycker pil nedåt
+                else if (input.Key == ConsoleKey.DownArrow)
+                {
+                    if (menuSelected == 0)
+                    {
+                        if (menuSelectDiceListIndex < (menuSelectDiceList.Count - 1))
+                        {
+                            menuSelectDiceListIndex++;
+                        }
+                        else
+                        {
+                            menuSelectDiceListIndex = 0;
+                        }
+                    }
+
+                    if (menuSelected == 1)
+                    {
+                        if (menuSelectCategoryListIndex < (menuSelectCategoryList.Count - 1))
+                        {
+                            menuSelectCategoryListIndex++;
+                        }
+                        else
+                        {
+                            menuSelectCategoryListIndex = 0;
+                        }
+                    }
+                }
+
+                // Trycker pil uppåt
+                else if (input.Key == ConsoleKey.UpArrow)
+                {
+                    if (menuSelected == 0)
+                    {
+                        if (menuSelectDiceListIndex > 0)
+                        {
+                            menuSelectDiceListIndex--;
+                        }
+                        else
+                        {
+                            menuSelectDiceListIndex = menuSelectDiceList.Count - 1;
+                        }
+                    }
+
+                    if (menuSelected == 1)
+                    {
+                        if (menuSelectCategoryListIndex > 0)
+                        {
+                            menuSelectCategoryListIndex--;
+                        }
+                        else
+                        {
+                            menuSelectCategoryListIndex = menuSelectCategoryList.Count - 1;
+                        }
+                    }
+
+                }
+
+                // Trycker R
+                else if (input.Key == ConsoleKey.R)
+                {
+                    if (turn.NumberOfThrowsLeft > 0)
+                    {
+                        turn.Throw(dice);
+                    }
+                }
+
+            }
+
+        } while (turn.Finished == false || scored == false);
+
+        rules.Bonus(player.Column);
+        Console.Clear();
+        Console.WriteLine("Table of " + player.Name);
+        Console.WriteLine();
+
+        foreach (model_category ca in player.Column.Categories)
+        {
+            Console.WriteLine(ca.Title + ": " + ca.Score);
+        }
+
+        Console.WriteLine();
+
+        Console.WriteLine("Press any key for next players round...");
+        Console.ReadKey();
+    } //Foreach player slut
+
+
+
+
+} while (won == false);
+Console.Clear();
+Console.WriteLine("Congratulations!!!");
+            
+        }   
+    }
+}

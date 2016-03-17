@@ -1,0 +1,5 @@
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Galleri\WebApplication8\bin\WebApplication8.dll
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Galleri\WebApplication8\bin\WebApplication8.pdb
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Galleri\WebApplication8\obj\Debug\WebApplication8.csprojResolveAssemblyReference.cache
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Galleri\WebApplication8\obj\Debug\WebApplication8.dll
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Galleri\WebApplication8\obj\Debug\WebApplication8.pdb

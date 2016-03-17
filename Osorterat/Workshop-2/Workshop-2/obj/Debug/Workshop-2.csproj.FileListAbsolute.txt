@@ -1,0 +1,9 @@
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Workshop-2\Workshop-2\bin\Debug\Workshop-2.exe.config
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Workshop-2\Workshop-2\obj\Debug\Workshop-2.csprojResolveAssemblyReference.cache
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Workshop-2\Workshop-2\obj\Debug\Workshop_2.Properties.Resources.resources
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Workshop-2\Workshop-2\obj\Debug\Workshop-2.csproj.GenerateResource.Cache
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Workshop-2\Workshop-2\bin\Debug\Workshop-2.exe
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Workshop-2\Workshop-2\bin\Debug\Workshop-2.pdb
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Workshop-2\Workshop-2\obj\Debug\Workshop_2.Form1.resources
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Workshop-2\Workshop-2\obj\Debug\Workshop-2.exe
+c:\users\andersrobelius\documents\visual studio 2012\Projects\Workshop-2\Workshop-2\obj\Debug\Workshop-2.pdb

@@ -1,0 +1,16 @@
+1:1111:Kajak:5:
+1:2222:Motorbåt:10:
+1:3333:Motorseglare:12:
+3:4444:Motorbåt:8:
+3:5555:Motorseglare:8:
+3:6666:Övrigt:4:
+3:7777:Motorbåt:10:
+3:4444:Motorbåt:8:
+3:5555:Motorseglare:8:
+6:6666:Kajak:4:
+6:7777:Segelbåt:10:
+6:8888:Segelbåt:4:
+13:9999:Segelbåt:6:
+13:1010:Motorbåt:5:
+13:1111:Kajak:2:
+13:1212:åååå:4:

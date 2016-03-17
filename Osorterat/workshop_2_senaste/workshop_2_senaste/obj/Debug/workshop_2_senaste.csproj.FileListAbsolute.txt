@@ -1,0 +1,8 @@
+c:\users\andersrobelius\documents\visual studio 2012\Projects\workshop_2_senaste\workshop_2_senaste\bin\Debug\workshop_2_senaste.exe.config
+c:\users\andersrobelius\documents\visual studio 2012\Projects\workshop_2_senaste\workshop_2_senaste\obj\Debug\workshop_2_senaste.csprojResolveAssemblyReference.cache
+c:\users\andersrobelius\documents\visual studio 2012\Projects\workshop_2_senaste\workshop_2_senaste\bin\Debug\workshop_2_senaste.exe
+c:\users\andersrobelius\documents\visual studio 2012\Projects\workshop_2_senaste\workshop_2_senaste\bin\Debug\workshop_2_senaste.pdb
+c:\users\andersrobelius\documents\visual studio 2012\Projects\workshop_2_senaste\workshop_2_senaste\obj\Debug\workshop_2_senaste.exe
+c:\users\andersrobelius\documents\visual studio 2012\Projects\workshop_2_senaste\workshop_2_senaste\obj\Debug\workshop_2_senaste.pdb
+c:\users\andersrobelius\documents\visual studio 2012\Projects\workshop_2_senaste\workshop_2_senaste\obj\Debug\workshop_2_senaste.Properties.Resources.resources
+c:\users\andersrobelius\documents\visual studio 2012\Projects\workshop_2_senaste\workshop_2_senaste\obj\Debug\workshop_2_senaste.csproj.GenerateResource.Cache

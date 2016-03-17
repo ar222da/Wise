@@ -1,0 +1,21 @@
+0:Ones
+1:Twos
+2:Threes
+3:Fours
+4:Fives
+5:Sixes
+6:Bonus
+7:One Pair
+8:Two Pair
+9:Three Pair
+10:Trio
+11:Quartet
+12:Quintet
+13:Small Straight
+14:Large Straight
+15:Full Straight
+16:Small House
+17:Large House
+18:Tower
+19:Chance
+20:Maxi Yahtzee

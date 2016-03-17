@@ -1,0 +1,8 @@
+c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame2\WindowsGame2\WindowsGame2\bin\x86\Debug\WindowsGame2.exe
+c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame2\WindowsGame2\WindowsGame2\bin\x86\Debug\WindowsGame2.pdb
+c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame2\WindowsGame2\WindowsGame2\obj\x86\Debug\WindowsGame2.csprojResolveAssemblyReference.cache
+c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame2\WindowsGame2\WindowsGame2\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame2\WindowsGame2\WindowsGame2\obj\x86\Debug\WindowsGame2.exe
+c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame2\WindowsGame2\WindowsGame2\obj\x86\Debug\WindowsGame2.pdb
+c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame2\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\mario_small.xnb
+C:\Users\AndersRobelius\documents\visual studio 2012\Projects\WindowsGame2\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\mario_bigger.xnb

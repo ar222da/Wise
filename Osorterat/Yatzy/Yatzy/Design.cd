@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Yatzy.controller">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAQAAAAAAAAAgAIAAAAgAAAAAAAAAAAAAAEAABAA=</HashCode>
+      <FileName>controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.model_category">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAEgAAAAIAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>model_category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.model_column">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAQAAAQUAAAEEAAAAAAAAAAAACA=</HashCode>
+      <FileName>model_column.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.model_die">
+    <Position X="9.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIAAAACAAAAAAAAAAAAAAAAAgAAAAIAQQAAAAAAAA=</HashCode>
+      <FileName>model_die.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.model_game">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAgwIAAAAACAIAGQwCAAEEABAgCAABIAAgAQAAAAA=</HashCode>
+      <FileName>model_game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.model_player">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAEQAQAAEAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>model_player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.model_rules_maxiYahtzee" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABMAQAACQABADQAAUAAAAEAAAAAEAgAAABAA=</HashCode>
+      <FileName>model_rules_maxiYahtzee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yatzy.model_rules_yahtzee" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABMAQAACQABADQAAUAAAAEAAAAAEAgAAABAA=</HashCode>
+      <FileName>model_rules_yahtzee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Yatzy.model_turn">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAAEAAAA=</HashCode>
+      <FileName>model_turn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.Program" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.view_loadViewGames">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAIEBAAAAAAEAAAABAAAAQQgAAAAIAAIAAEACAAA=</HashCode>
+      <FileName>view_loadViewGames.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.view_menu">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>view_menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.view_newGame">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAQAAAAEAAAAhAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>view_newGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yatzy.view_run">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAASAoAACAUAAIABQACIAAAQAAAAAABAQIAAQECAAA=</HashCode>
+      <FileName>view_run.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Yatzy.Imodel_rules">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAACAABACQAAEAAAAEAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Imodel_rules.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Yatzy.model_gameType">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAgAAAA=</HashCode>
+      <FileName>model_gameType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Yatzy.model_playerType">
+    <Position X="4" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>model_playerType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

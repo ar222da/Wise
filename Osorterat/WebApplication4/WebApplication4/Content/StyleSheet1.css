@@ -1,0 +1,39 @@
+﻿#top 
+{
+    font-family: arial;
+    border-left: 1px solid;
+}
+
+#top h1 
+{
+    margin-left: 20px;
+    margin-bottom: 10px;    
+}
+
+#top p 
+{
+    font-style: italic;
+    margin-left: 20px;    
+}
+
+#border {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: aqua;
+    width: 600px;
+    height: 20px;
+}
+
+#TextBox1 
+{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 200px;
+    border: 1px solid;
+}
+
+#Button1 
+{
+    margin-left: 20px;
+}

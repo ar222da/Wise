@@ -1,0 +1,46 @@
+[controller]->[model_game]
+[controller]-.->[view_menu]
+[controller]-.->[view_loadViewGames]
+[controller]-.->[view_newGame]
+[controller]-.->[view_run]
+
+
+
+[model_rules_yahtzee]-.->[<<interface>> Imodel_rules]
+[model_rules_maxiYahtzee]-.->[<<interface>> Imodel_rules]
+
+[<<interface>> Imodel_rules]-.->[model_category]
+[<<interface>> Imodel_rules]-.->[model_die]
+[<<interface>> Imodel_rules]-.->[model_column]
+
+[model_column]->[model_category]
+
+[model_player]->[<<enum>> model_playerType]
+[model_player]->[model_column]
+
+[model_turn]->[model_die]
+
+[view_loadViewGames]->[model_game]
+
+[view_newGame]->[<<enum>> model_gameType]
+[view_newGame]->[model_player]
+
+[view_run]->[model_player]
+[view_run]->[<<interface>> Imodel_rules]
+[view_run]->[model_turn]
+[view_run]->[model_die]
+[view_run]->[model_category]
+
+
+[model_game]->[<<enum>> model_gameType]
+[model_game]->[<<interface>> Imodel_rules]
+[model_game]->[model_player]
+[model_game]->[model_turn]
+
+[<<enum>> model_gameType]
+[<<enum>> model_playerType]
+[view_loadViewGames]
+[view_menu]
+[view_newGame]
+[view_run]
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{76B79777-32FE-40F2-936B-BB2F54D5B351}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame1\WindowsGame1\WindowsGame1Content\</RootDirectory>
+      <LoggerRootDirectory>c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame1\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
+      <IntermediateDirectory>c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>c:\users\andersrobelius\documents\visual studio 2012\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-04-19T18:43:49.5265868+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

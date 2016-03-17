@@ -1,0 +1,13 @@
+[Model::Member]->m_boats[Model::Boat]
+[Model::Boat]->m_type[<<Enum>> Model::Boat::Type]
+[Model::MemberList]->m_members[Model::Member]
+
+[View::Member]-.->[Model::Member]
+[View::Member]-.->[Model::Boat]
+[View::MemberList]-.->[Model::MemberList]
+[View::MemberList]-.->[Model::Member]
+
+[Controller]-.->[View::MemberList]
+[Controller]-.->[View::Member]
+[Controller]-.->[Model::Member]
+[Controller]-.->[Model::Boat]

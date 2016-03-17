@@ -1,0 +1,47 @@
+Content\font.xnb
+Content\air-20529_1280.xnb
+Content\font2.xnb
+Content\gameover.xnb
+Content\kill.xnb
+Content\jump.xnb
+Content\walking.xnb
+Content\killEnemy.xnb
+Content\en.xnb
+Content\bricksheet.xnb
+Content\sky1.xnb
+Content\sky2.xnb
+Content\sheet5.xnb
+Content\funny2.xnb
+Content\funny2 (1).xnb
+Content\brickbibi.xnb
+Content\clouds-351487_1920.xnb
+Content\cloudy-240327_1280.xnb
+Content\button-quit-opacity.xnb
+Content\button-quit.xnb
+Content\button-start-opacity.xnb
+Content\button-start.xnb
+Content\menu.xnb
+Content\pause.xnb
+Content\nalaka-pres.xnb
+Content\no.xnb
+Content\no-op.xnb
+Content\quit.xnb
+Content\yes.xnb
+Content\yes-op.xnb
+Content\menu (1).xnb
+Content\gameover (3).xnb
+Content\finished.xnb
+Content\1.txt
+Content\Enemies\1.txt
+Content\Enemies\2.txt
+Content\Enemies\3.txt
+Content\Enemies\4.txt
+Content\5.txt
+Content\6.txt
+Content\7.txt
+Content\Enemies\5.txt
+Content\Enemies\6.txt
+Content\Enemies\7.txt
+Content\2.txt
+Content\3.txt
+Content\4.txt

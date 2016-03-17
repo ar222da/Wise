@@ -1,0 +1,14 @@
+0:Ones
+1:Twos
+2:Threes
+3:Fours
+4:Fives
+5:Sixes
+6:Bonus
+7:Three of a kind
+8:Four of a kind
+9:Full House
+10:Small Straight
+11:Large Straight
+12:Yahtzee
+13:Chance

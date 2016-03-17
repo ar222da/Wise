@@ -1,0 +1,4 @@
+C:\Users\ar222da\Desktop\Nytt efter påsk\Laboration6\Laboration6\bin\Laboration6.dll
+C:\Users\ar222da\Desktop\Nytt efter påsk\Laboration6\Laboration6\bin\Laboration6.pdb
+C:\Users\ar222da\Desktop\Nytt efter påsk\Laboration6\Laboration6\obj\Release\Laboration6.dll
+C:\Users\ar222da\Desktop\Nytt efter påsk\Laboration6\Laboration6\obj\Release\Laboration6.pdb

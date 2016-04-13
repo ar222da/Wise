@@ -1,0 +1,68 @@
+package ar222da;
+
+import java.util.Scanner;
+
+public class Program 
+{
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner(System.in);
+		
+		Box myBox = new Box(10, 25, 10);
+		System.out.print(myBox.toString());
+
+		boolean widthInputValidFormat = false;
+		boolean heightInputValidFormat = false;
+		boolean depthInputValidFormat = false;
+		
+		Box yourBox = new Box();
+		
+		System.out.print("Ange bredd på din låda: ");
+		
+		do
+		{
+			String width = scan.nextLine();
+			
+			try
+			{
+				yourBox.setWidth(Integer.parseInt(width));
+				widthInputValidFormat = true;
+			}
+			catch
+			{
+				
+			}
+			
+		} while (widthInputValidFormat == false);
+			
+		
+		System.out.print("Ange höjd på din låda: ");
+
+		do
+		{
+			String height = scan.nextLine();
+			
+			try
+			{
+				yourBox.setHeight(Integer.parseInt(height));
+				heightInputValidFormat = true;
+			}
+			catch
+			{
+				
+			}
+			
+		} while (heightInputValidFormat == false);
+			
+
+		System.out.print("Ange djup på din låda: ");
+
+		do
+		{
+			
+		} while (depthInputValidFormat == false);
+		
+		
+	}
+
+}

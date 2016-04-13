@@ -1,0 +1,6 @@
+com.android.ide.eclipse.ddms.adbDebugBasePort=9999
+com.android.ide.eclipse.ddms.logLevel=assert
+com.android.ide.eclipse.ddms.threadStatusInterval=59
+com.android.ide.eclipse.ddms.timeOut=1
+com.android.ide.eclipse.ddms.useAdbHost=true
+eclipse.preferences.version=1

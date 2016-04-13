@@ -1,0 +1,93 @@
+package ar222da;
+
+import java.util.Scanner;
+
+public class Program 
+{
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner(System.in);
+		
+		Box myBox = new Box(10, 25, 10);
+		System.out.print("Jag har: ");
+		System.out.print(myBox.toString());
+
+		boolean widthInputValidFormat = false;
+		boolean heightInputValidFormat = false;
+		boolean depthInputValidFormat = false;
+		
+		/** Skapar användarens låda med "tom" konstruktor, endast objekt skapas med alla privata fält nollställda.
+		 */
+		Box yourBox = new Box();
+		
+		
+		/** Användares inmatning av bredd, höjd och djup med felhantering.
+		 * Tre stycken do-while-loopar som inte bryts förrän konverteringen av sträng till heltal fungerar.
+		 * En do-while-loop för tilldelning av varje privat i fält box-objektet.
+		 */
+		System.out.print("Ange bredd på din låda: ");
+		
+		do
+		{
+			String width = scan.nextLine();
+			
+			try
+			{
+				yourBox.setWidth(Integer.parseInt(width));
+				widthInputValidFormat = true;
+			}
+			catch (NumberFormatException e)
+			{
+				System.out.println("Ett fel har inträffat!");
+				System.out.print("Vänligen ange ett TAL för lådans bredd: ");
+			}
+			
+		} while (widthInputValidFormat == false);
+			
+		
+		System.out.print("Ange höjd på din låda: ");
+
+		do
+		{
+			String height = scan.nextLine();
+			
+			try
+			{
+				yourBox.setHeight(Integer.parseInt(height));
+				heightInputValidFormat = true;
+			}
+			catch (NumberFormatException e)
+			{
+				System.out.println("Ett fel har inträffat!");
+				System.out.print("Vänligen ange ett TAL för lådans höjd: ");
+			}
+			
+		} while (heightInputValidFormat == false);
+			
+
+		System.out.print("Ange djup på din låda: ");
+
+		do
+		{
+			String depth = scan.nextLine();
+			
+			try
+			{
+				yourBox.setDepth(Integer.parseInt(depth));
+				depthInputValidFormat = true;
+			}
+			catch (NumberFormatException e)
+			{
+				System.out.println("Ett fel har inträffat!");
+				System.out.print("Vänligen ange ett TAL för lådans djup: ");
+			}
+			
+		} while (depthInputValidFormat == false);
+		
+		
+		System.out.print("Du har: ");
+		System.out.print(yourBox.toString());
+		
+	}
+
+}

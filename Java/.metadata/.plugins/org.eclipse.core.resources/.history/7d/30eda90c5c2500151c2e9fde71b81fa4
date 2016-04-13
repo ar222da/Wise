@@ -1,0 +1,39 @@
+package ar222da;
+
+public class Box extends Rectangle
+{
+	private int depth;
+	
+	public Box()
+	{
+		super(0,0);
+		this.depth = 0;
+	}
+	
+	public Box(int width, int height, int depth)
+	{
+		super(width, height);
+		this.depth = depth;
+	}
+	
+	public int computeVolume()
+	{
+		return super.getWidth() * super.getHeight() * depth;
+	}
+	
+	public int computeArea()
+	{
+		return super.computeArea() * 6;
+	}
+	
+	public int getDepth()
+	{
+		return depth;
+	}
+	
+	public void setDepth(int depth)
+	{
+		this.depth = depth;
+	}
+
+}

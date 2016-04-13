@@ -1,0 +1,53 @@
+package ar222da;
+
+public class Box extends Rectangle
+{
+	private int depth;
+	
+	public Box()
+	{
+		super(0,0);
+		this.depth = 0;
+	}
+	
+	public Box(int width, int height, int depth)
+	{
+		super(width, height);
+		this.depth = depth;
+	}
+	
+	public int computeVolume()
+	{
+		return getWidth() * getHeight() * depth;
+	}
+	
+	public int computeArea()
+	{
+		int parallelSides1 = (getWidth() * getHeight()) * 2;
+		int parallelSides2 = (getWidth() * depth) * 2;
+		int parallelSides3 = (getHeight() * depth) * 2;
+		
+		return parallelSides1 + parallelSides2 + parallelSides3;
+	}
+	
+	public int getDepth()
+	{
+		return depth;
+	}
+	
+	public void setDepth(int depth)
+	{
+		this.depth = depth;
+	}
+
+	@Override
+	public String toString() 
+	{
+		String boxString = String.format("En låda med bredden %d, höjden %d och djupet %d", getWidth(), getHeight(), depth);
+		System.out.printf(boxString);
+		return super.toString();
+	}
+	
+	
+
+}

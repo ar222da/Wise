@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/1dv432.steg1.lab5/src/Summan_av_tre_siffror.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Summan_av_tre_siffror"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="1dv432.steg1.lab5"/>
+</launchConfiguration>

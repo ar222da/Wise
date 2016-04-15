@@ -1,0 +1,131 @@
+-- UPPGIFT 2a) 1 --
+ALTER PROCEDURE usp_NyArtikel
+@Artnamn varchar(30) = '',
+@Antal smallint = 0,
+@Pris decimal(6,2) = 0,
+@Rabatt decimal (2,2) = 0,
+@Plats char(10) = ''
+AS
+BEGIN TRY
+	INSERT INTO Artikel (Artnamn, Antal, Pris, Rabatt, Plats)
+	VALUES (@Artnamn, @Antal, @Pris, @Rabatt, @Plats) 
+END TRY
+BEGIN CATCH
+	RAISERROR ('Artikel kunde inte läggas till!', 16, 1)
+END CATCH
+GO
+
+EXEC usp_NyArtikel 'Skrivbord', '5', '500', '0', 'HLP 25'
+
+
+-- UPPGIFT 2a) 2 --
+ALTER PROCEDURE usp_UppdateraArtikel
+@ArtikelID int = 0,
+@Artnamn varchar(30) = ' ',
+@Antal smallint = 0,
+@Pris decimal(6,2) = 0,
+@Rabatt decimal (2,2) = 0,
+@Plats char(10) = ' '
+AS
+BEGIN TRY
+	IF EXISTS(SELECT * FROM Artikel WHERE ArtikelID=@ArtikelID)
+		UPDATE Artikel 
+		SET 
+			Artnamn = @Artnamn,
+			Antal = @Antal,
+			Pris = @Pris,
+			Rabatt = @Rabatt,
+			Plats = @Plats
+		WHERE ArtikelID = @ArtikelID
+	ELSE
+		RAISERROR ('Artikeln finns inte!', 16, 1)
+END TRY
+BEGIN CATCH
+	RAISERROR ('Artikeln kunde inte uppdateras!', 16, 1)
+END CATCH
+GO
+
+EXEC usp_UppdateraArtikel '27', 'Skrivbord Efraim', '5', '500', '0', 'HLP 25'
+
+
+
+
+
+-- UPPGIFT 2a) 3 --
+CREATE PROCEDURE usp_RaderaArtikel
+@ArtikelID int = 0
+AS
+BEGIN TRY
+	IF EXISTS(SELECT * FROM Artikel WHERE ArtikelID=@ArtikelID)
+		DELETE FROM Artikel WHERE ArtikelID = @ArtikelID
+	ELSE
+		RAISERROR ('Artikeln finns inte!', 16, 1)
+END TRY
+BEGIN CATCH
+	RAISERROR ('Artikeln kunde inte raderas!', 16, 1)
+END CATCH
+GO
+
+EXEC usp_RaderaArtikel 23
+
+
+
+-- UPPGIFT 2b --
+CREATE PROCEDURE usp_ArtikelLista
+@ArtikelID int = 0
+AS
+IF @ArtikelID = 0
+	BEGIN
+		SELECT ArtikelID, Artnamn, Pris, (Antal*Pris) FROM Artikel
+		ORDER BY Artnamn ASC
+	END
+ELSE
+	BEGIN
+		SELECT ArtikelID, Artnamn, Pris, (Antal*Pris) FROM Artikel
+		WHERE ArtikelID = @ArtikelID
+		IF @@ROWCOUNT = 0
+			RAISERROR ('Artikeln som du efterfrågat finns inte!', 16, 1)
+	END	
+GO
+
+EXEC usp_ArtikelLista 19
+
+-- UPPGIFT 2c --
+ALTER PROCEDURE usp_TelefonLista
+@KundID int = 0
+AS
+BEGIN
+	CREATE TABLE #Temp
+	(
+		Eid int Primary Key IDENTITY (1,1),
+		Namn varchar(40) NOT NULL,
+		Ort varchar(25) NOT NULL,
+		Telenr varchar(15),
+		Teltyp varchar(10)
+	)
+ 	
+ 	IF @KundID = 0
+ 		BEGIN
+ 			INSERT INTO #Temp (Namn, Ort, Telenr, Teltyp)
+ 			SELECT Kund.Namn, Kund.Ort, Telefon.Telenr, Teltyp.Teltyp
+ 			FROM Kund LEFT OUTER JOIN Telefon ON Kund.KundID = Telefon.KundID
+ 			LEFT OUTER JOIN Teltyp ON Telefon.TeltypID = Teltyp.TelTypID
+		END
+	ELSE
+		BEGIN
+ 			INSERT INTO #Temp (Namn, Ort, Telenr, Teltyp)
+ 			SELECT Kund.Namn, Kund.Ort, Telefon.Telenr, Teltyp.Teltyp
+ 			FROM Kund LEFT OUTER JOIN Telefon ON Kund.KundID = Telefon.KundID
+ 			LEFT OUTER JOIN Teltyp ON Telefon.TeltypID = Teltyp.TelTypID
+			WHERE Kund.KundID = @KundID
+			IF @@ROWCOUNT = 0
+				RAISERROR ('Kunden som du efterfrågat finns inte!', 16, 1)
+		END
+		 	
+ 	SELECT * FROM #Temp
+ 	
+ 	DROP TABLE #Temp
+END
+GO
+
+EXEC usp_TelefonLista 
